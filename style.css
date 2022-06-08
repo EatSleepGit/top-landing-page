@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100&display=swap');
 
+:root {
+    /* hero & footer bg color, info header & quote text.  */
+    --main-color: #1f2937;
+    /* hero main & header logo text */
+    --heading-color: #f9faf8;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,3 +19,71 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* var(--main-color);
+var(--heading-color) */
+
+header {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+}
+
+.logo {
+    color: var(--heading-color);
+    font-size: 24px; 
+    padding-top: 0.5rem;
+}
+
+.nav {
+   /* display: flex; */
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, .hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.hero {
+    background-color: var(--main-color);
+    color: var(--heading-color);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text {
+   padding-top: 80px;
+   width: 1024px;
+   width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero p {
+   font-size: 18px;
+}
